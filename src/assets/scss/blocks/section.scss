@@ -8,13 +8,11 @@
 
 .section-title {
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 6.44rem;
   line-height: 100%;
-  text-transform: uppercase;
-  color: $black;
+  color: $primary;
 
-  margin-bottom: 3rem;
-  padding-left: 8rem;
+  margin-bottom: 5rem;
 
   @include breakpoint($lg-bp) {
     font-size: 3rem;

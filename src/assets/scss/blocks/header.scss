@@ -8,8 +8,6 @@
 
   transition: all 0.2s linear;
   transform: translateY(0);
-
-  background: rgba(15, 54, 43, 0.5);
 }
 
 .header.out {
@@ -20,6 +18,19 @@
 .header__inner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  padding: 3rem 0;
+}
+
+.menu__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.nav-list__item-link {
+  font-weight: 500;
 }
 
 .burger-menu {

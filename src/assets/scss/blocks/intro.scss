@@ -1,0 +1,46 @@
+.intro {
+  min-height: 91.3rem;
+
+  background: url(../images/intro/intro-bg.png) no-repeat;
+  background-position: right;
+  background-size: 134.9rem;
+}
+.intro__inner {
+  width: 100%;
+  max-width: 106rem;
+
+  padding-top: 6.4rem;
+}
+.intro__title {
+  font-weight: 700;
+  font-size: 6.4rem;
+
+  margin-bottom: 6rem;
+}
+.intro__subtitle {
+  position: relative;
+
+  width: 100%;
+  max-width: 87rem;
+
+  font-size: 2rem;
+
+  padding-left: 27rem;
+  margin-bottom: 10rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 24.5rem;
+    height: 1px;
+
+    background: $primary;
+  }
+}
+.intro__price-btn {
+  width: 100%;
+  max-width: 30rem;
+}

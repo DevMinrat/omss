@@ -1,7 +1,7 @@
 //= ../../../node_modules/swiper/swiper-bundle.js
+//= components/scrolllock.js
 
 document.addEventListener("DOMContentLoaded", () => {
-  //= components/scroll-lock.js
   //= components/sliders.js
 
   // header functional
@@ -112,30 +112,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // modal functioal
 
-  const modalTriggers = document.querySelectorAll("[data-modal]");
+  // const modalTriggers = document.querySelectorAll("[data-modal]");
 
-  if (modalTriggers.length > 0) {
-    modalTriggers.forEach((el) => {
-      el.addEventListener("click", () => {
-        let modalName = el.dataset.modal;
-        let modal = document.querySelector(`[data-modalName='${modalName}']`);
+  // if (modalTriggers.length > 0) {
+  //   modalTriggers.forEach((el) => {
+  //     el.addEventListener("click", () => {
+  //       let modalName = el.dataset.modal;
+  //       let modal = document.querySelector(`[data-modalName='${modalName}']`);
 
-        modal.classList.remove("hide");
-        scrollLock.disablePageScroll();
-      });
-    });
-  }
+  //       modal.classList.remove("hide");
+  //       scrollLock.disablePageScroll();
+  //     });
+  //   });
+  // }
 
-  const modals = document.querySelectorAll(".modal");
+  // const modals = document.querySelectorAll(".modal");
 
-  if (modals.length > 0) {
-    modals.forEach((el) => {
-      el.querySelector("[data-close]").addEventListener("click", () => {
-        el.classList.add("hide");
-        scrollLock.enablePageScroll();
-      });
-    });
-  }
+  // if (modals.length > 0) {
+  //   modals.forEach((el) => {
+  //     el.querySelector("[data-close]").addEventListener("click", () => {
+  //       el.classList.add("hide");
+  //       scrollLock.enablePageScroll();
+  //     });
+  //   });
+  // }
 
   // Anchor smooth scroll
 

@@ -28,21 +28,21 @@ html {
 }
 
 body {
-  font-family: Commissioner, sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
-  line-height: 1.5;
+  line-height: 1.25;
   color: $black;
 
-  background-color: white;
+  background-color: #fafafa;
 
-  @include breakpoint ($sm-bp) {
+  @include breakpoint($sm-bp) {
     font-size: 1.6rem;
   }
 }
 
 main {
-  padding-top: 9.6rem;
+  padding-top: 16.7rem;
 }
 
 img {
@@ -60,6 +60,12 @@ a {
   }
 }
 
+input,
+textarea,
+button {
+  font-family: Inter, sans-serif;
+}
+
 /* Vendors */
 
 @import "vendor/swiper.scss";
@@ -73,6 +79,10 @@ a {
 @import "blocks/filled-btn";
 @import "blocks/modal.scss";
 @import "blocks/section.scss";
+
+@import "blocks/intro.scss";
+@import "blocks/complects.scss";
+@import "blocks/about.scss";
 
 @import "blocks/footer";
 
