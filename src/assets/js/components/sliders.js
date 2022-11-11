@@ -17,9 +17,20 @@ const complectsSlider = new Swiper(".complects-slider", {
   //     },
   //   },
 });
+
 const aboutSlider = new Swiper(".about-slider", {
   slidesPerView: "auto",
   spaceBetween: 20,
+
+  navigation: {
+    nextEl: ".intro-slider__btn-next",
+    prevEl: ".intro-slider__btn-prev",
+  },
+});
+const partnersSlider = new Swiper(".partners-slider", {
+  slidesPerView: "auto",
+  loop: true,
+  spaceBetween: 200,
 
   navigation: {
     nextEl: ".intro-slider__btn-next",

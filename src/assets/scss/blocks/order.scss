@@ -1,0 +1,35 @@
+.order__inner {
+  display: flex;
+  align-items: center;
+  gap: 21.5rem;
+}
+
+.order__img {
+  width: 100%;
+  max-width: 96rem;
+}
+
+.order__content {
+  width: 100%;
+  max-width: 54.5rem;
+}
+
+.order-label + .order-label {
+  margin-top: 3rem;
+}
+
+.order-form {
+  width: 100%;
+  max-width: 46.6rem;
+
+  margin: 0 auto;
+}
+
+.order__checkbox {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.order__btn {
+  max-width: 100%;
+}

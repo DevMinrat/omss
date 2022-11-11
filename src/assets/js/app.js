@@ -152,24 +152,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // accordeon
+  let inputWrappers = document.querySelectorAll(".form-input__wrapper");
 
-  //   const faqAccTitle = document.querySelectorAll(".faq__item-title"),
-  //     faqAccText = document.querySelectorAll(".faq__item-descr");
-
-  //   if (faqAccTitle.length > 0) {
-  //     for (let i = 0; i < faqAccTitle.length; i++) {
-  //       faqAccTitle[i].addEventListener("click", function () {
-  //         this.classList.toggle("active");
-
-  //         let panel = faqAccText[i];
-
-  //         if (panel.style.maxHeight) {
-  //           panel.style.maxHeight = null;
-  //         } else {
-  //           panel.style.maxHeight = panel.scrollHeight + "px";
-  //         }
-  //       });
-  //     }
-  //   }
+  if (inputWrappers) {
+    document.querySelectorAll(".form-input").forEach(function (el) {
+      el.addEventListener("focus", function () {
+        el.parentElement.classList.add("focus");
+      });
+      el.addEventListener("blur", function () {
+        if (el.value != "" || el.innerHTML.length != 0) {
+          el.parentElement.classList.add("focus");
+        } else {
+          el.parentElement.classList.remove("focus");
+        }
+      });
+    });
+  }
 });

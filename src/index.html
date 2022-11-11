@@ -124,8 +124,136 @@ title: Главная страница
     </div>
 </section>
 
-<section>
+<section class="services section">
     <div class="container">
-        <div class="services__inner"></div>
+        <h2 class="section-title">Услуги</h2>
+        <div class="services__inner">
+            <div class="services__top-row">
+                <div class="services-item services-item--security">
+                    <img src="assets/images/services/service-1.jpg" alt="">
+                    <div class="services-item__content">
+                        <h3 class="services-item__title">Система охранного видеонаблюдения</h3>
+                        <p class="services-item__descr">Проектирование и монтаж системы охранного видеонаблюдения</p>
+                        <p class="services-item__price">от 20 000 ₽</p>
+                    </div>
+                </div>
+                <div class="services-item services-item--security-alarm">
+                    <div class="services-item__content">
+                        <h3 class="services-item__title">Система охранной или охранно-тревожной сигнализации</h3>
+                        <p class="services-item__descr">Система охранной или охранно-тревожной сигнализации – это
+                            система, которая необходима на любых объектах для обеспечения безопасности</p>
+                        <p class="services-item__price">от 90 000 ₽</p>
+                    </div>
+                </div>
+                <div class="services-item services-item--firefight">
+                    <div class="services-item__content">
+                        <h3 class="services-item__title">Дымоудаление и противопожарная автоматика</h3>
+                        <p class="services-item__price">от 90 000 ₽</p>
+                    </div>
+                    <img src="assets/images/services/service-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="services__bottom-row">
+                <div class="services-item services-item--firefight-alarm">
+                    <div class="services-item__content">
+                        <h3 class="services-item__title">Автоматическая пожарная сигнализация и система оповещения и
+                            управления эвакуацией</h3>
+                        <div class="services-item__descr">
+                            <div class="services-item__descr-item">Избавляем от проблем с подрядчиками и документами
+                            </div>
+                            <div class="services-item__descr-item">Выполняем проекты любой сложности</div>
+                            <div class="services-item__descr-item">Инвестируем в технологии</div>
+                        </div>
+                        <p class="services-item__price">от 190 000 ₽</p>
+                    </div>
+                </div>
+                <div class="services-item services-item--sov">
+                    <div class="services-item__content">
+                        <h3 class="services-item__title">СОВ (СКУД)</h3>
+                        <p class="services-item__price">от 190 000 ₽</p>
+                    </div>
+                    <img src="assets/images/services/service-3.png" alt="">
+                </div>
+                <div class="services-item services-item--order">
+                    <button class="hollow-btn">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="projects section">
+    <div class="container">
+        <h2 class="section-title">Наши проекты</h2>
+        <div class="projects__inner">
+
+        </div>
+    </div>
+</section>
+
+<section class="partners section">
+    <div class="container">
+        <h2 class="section-title">Наши партнеры</h2>
+    </div>
+    <div class="partners__inner">
+        <div class="container">
+            <div class="partners-slider">
+                <div class="swiper-wrapper">
+                    <div class="partners-slider__item swiper-slide">
+                        <img src="assets/images/partners/partner-1.png" alt="">
+                    </div>
+                    <div class="partners-slider__item swiper-slide">
+                        <img src="assets/images/partners/partner-2.png" alt="">
+                    </div>
+                    <div class="partners-slider__item swiper-slide">
+                        <img src="assets/images/partners/partner-3.png" alt="">
+                    </div>
+                    <div class="partners-slider__item swiper-slide">
+                        <img src="assets/images/partners/partner-4.png" alt="">
+                    </div>
+                    <div class="partners-slider__item swiper-slide">
+                        <img src="assets/images/partners/partner-1.png" alt="">
+                    </div>
+                    <div class="partners-slider__item swiper-slide">
+                        <img src="assets/images/partners/partner-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="partners__btn hollow-btn">Оставить заявку</button>
+</section>
+
+<section class="order section">
+    <div class="order__inner">
+        <img class="order__img" src="assets/images/order/order-img.jpg" alt="">
+        <div class="order__content">
+            <h2 class="section-title">Оставить заявку</h2>
+            <form class="order-form" action="#">
+                <div class="order-label">
+                    <div class="form-input__wrapper">
+                        <input class="form-input" id="input-name" type="text" required>
+                        <label for="input-name">Имя</label>
+                    </div>
+                </div>
+                <div class="order-label">
+                    <div class="form-input__wrapper">
+                        <input class="form-input" id="input-tel" type="tel" required>
+                        <label for="input-tel">Телефон</label>
+                    </div>
+                </div>
+                <div class="order-label">
+                    <div class="form-input__wrapper error">
+                        <input class="form-input" id="input-email" type="email" required>
+                        <label for="input-email">E-mail</label>
+                    </div>
+                </div>
+                <div class="order__checkbox">
+                    <input class="custom-checkbox" type="checkbox" value="privacy" name="privacy" id="order-privacy">
+                    <label for="order-privacy">Согласен на обработку персональных данных</label>
+                </div>
+                <button class="order__btn hollow-btn" type="submit">Отправить</button>
+            </form>
+        </div>
     </div>
 </section>
