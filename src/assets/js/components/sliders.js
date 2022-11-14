@@ -3,8 +3,8 @@ const complectsSlider = new Swiper(".complects-slider", {
   spaceBetween: 80,
 
   navigation: {
-    nextEl: ".intro-slider__btn-next",
-    prevEl: ".intro-slider__btn-prev",
+    nextEl: ".compltects-btn-next",
+    prevEl: ".compltects-btn-prev",
   },
 
   //   breakpoints: {
@@ -23,8 +23,8 @@ const aboutSlider = new Swiper(".about-slider", {
   spaceBetween: 20,
 
   navigation: {
-    nextEl: ".intro-slider__btn-next",
-    prevEl: ".intro-slider__btn-prev",
+    nextEl: ".about-btn-next",
+    prevEl: ".about-btn-prev",
   },
 });
 const partnersSlider = new Swiper(".partners-slider", {
@@ -33,7 +33,18 @@ const partnersSlider = new Swiper(".partners-slider", {
   spaceBetween: 200,
 
   navigation: {
-    nextEl: ".intro-slider__btn-next",
-    prevEl: ".intro-slider__btn-prev",
+    nextEl: ".partners-btn-next",
+    prevEl: ".partners-btn-prev",
   },
+});
+const projectsSlider = new Swiper(".projects-slider", {
+  slidesPerView: "auto",
+  grid: {
+    rows: 2,
+  },
+
+    navigation: {
+      nextEl: ".projects-btn-next",
+    prevEl: ".projects-btn-prev",
+    },
 });

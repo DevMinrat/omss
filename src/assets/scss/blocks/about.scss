@@ -39,6 +39,14 @@
   overflow: hidden;
 }
 
+.about-slider__navs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 3rem;
+}
+
 .about-slider__item {
   width: 100%;
   max-width: 54rem;

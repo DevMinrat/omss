@@ -12,6 +12,16 @@
   margin-bottom: 5rem;
 }
 
+.complects-slider {
+  margin-bottom: 3rem;
+}
+
+.complects-slider__navs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .complects-slider__item {
   width: 100%;
   max-width: 88rem;

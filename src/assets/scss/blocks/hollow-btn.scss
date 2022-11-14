@@ -33,4 +33,14 @@
       margin-left: 1.6rem;
     }
   }
+
+  &[disabled] {
+    color: $gray;
+
+    border-color: $gray;
+
+    &:hover {
+      background: transparent;
+    }
+  }
 }
