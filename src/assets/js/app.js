@@ -33,11 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const burger = document.querySelector(".burger-menu");
-    const menu = document.querySelector(".menu");
+    const headerContent = document.querySelector(".header-content");
+    const main = document.querySelector("main");
 
     burger.addEventListener("click", () => {
       burger.classList.toggle("menu-on");
-      menu.classList.toggle("active");
+      headerContent.classList.toggle("active");
+      main.classList.toggle("bg");
 
       if (burger.classList.contains("menu-on")) {
         scrollLock.disablePageScroll();
@@ -112,30 +114,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // modal functioal
 
-  // const modalTriggers = document.querySelectorAll("[data-modal]");
+  const modalTriggers = document.querySelectorAll("[data-modal]");
 
-  // if (modalTriggers.length > 0) {
-  //   modalTriggers.forEach((el) => {
-  //     el.addEventListener("click", () => {
-  //       let modalName = el.dataset.modal;
-  //       let modal = document.querySelector(`[data-modalName='${modalName}']`);
+  if (modalTriggers.length > 0) {
+    modalTriggers.forEach((el) => {
+      el.addEventListener("click", () => {
+        let modalName = el.dataset.modal;
+        let modal = document.querySelector(`[data-modalName='${modalName}']`);
 
-  //       modal.classList.remove("hide");
-  //       scrollLock.disablePageScroll();
-  //     });
-  //   });
-  // }
+        modal.classList.remove("hide");
+        scrollLock.disablePageScroll();
+      });
+    });
+  }
 
-  // const modals = document.querySelectorAll(".modal");
+  const modals = document.querySelectorAll(".modal");
 
-  // if (modals.length > 0) {
-  //   modals.forEach((el) => {
-  //     el.querySelector("[data-close]").addEventListener("click", () => {
-  //       el.classList.add("hide");
-  //       scrollLock.enablePageScroll();
-  //     });
-  //   });
-  // }
+  if (modals.length > 0) {
+    modals.forEach((el) => {
+      el.querySelector("[data-close]").addEventListener("click", () => {
+        el.classList.add("hide");
+        scrollLock.enablePageScroll();
+      });
+    });
+  }
 
   // Anchor smooth scroll
 

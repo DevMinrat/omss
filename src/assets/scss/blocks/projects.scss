@@ -5,6 +5,10 @@
 
   overflow: hidden;
 
+  @include breakpoint($xl-bp) {
+    overflow: visible;
+  }
+
   .swiper-wrapper {
     row-gap: 10rem;
   }
@@ -15,6 +19,18 @@
   bottom: 0;
   right: 0;
   z-index: 1;
+
+  @include breakpoint($xl-bp) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    width: 100%;
+
+    bottom: -7rem;
+    right: auto;
+  }
 }
 
 .projects-item {
@@ -24,14 +40,26 @@
 
   margin-top: 0 !important;
 
+  @include breakpoint($xl-bp) {
+    // max-width: 99rem;
+  }
+
   &:nth-child(odd) {
     .projects-item__wrapper {
       padding-right: 17rem;
+
+      @include breakpoint($xl-bp) {
+        padding-right: 0;
+      }
     }
   }
   &:nth-child(even) {
     .projects-item__wrapper {
       padding-left: 17rem;
+
+      @include breakpoint($xl-bp) {
+        padding-left: 0rem;
+      }
     }
   }
 }
@@ -42,11 +70,19 @@
   gap: 8rem;
 
   width: 100%;
+
+  @include breakpoint($xl-bp) {
+    gap: 2rem;
+  }
 }
 
 .projects-item__content {
   width: 100%;
   max-width: 59.3rem;
+
+  @include breakpoint($xl-bp) {
+    max-width: 56.5rem;
+  }
 }
 
 .projects-item__title {

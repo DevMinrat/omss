@@ -2,11 +2,19 @@
   display: flex;
   align-items: center;
   gap: 21.5rem;
+
+  @include breakpoint($xl-bp) {
+    gap: 5rem;
+  }
 }
 
 .order__img {
   width: 100%;
   max-width: 96rem;
+
+  @include breakpoint($xl-bp) {
+    max-width: 72rem;
+  }
 }
 
 .order__content {

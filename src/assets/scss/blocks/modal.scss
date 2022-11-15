@@ -10,23 +10,11 @@
   overflow: hidden;
 
   background: rgba(55, 65, 71, 0.6);
-
-  .section-heading {
-    text-align: left;
-
-    margin-bottom: 1.8rem;
-
-    @include breakpoint($sm-bp) {
-      margin-bottom: 2.4rem;
-    }
-  }
 }
 
 .modal__inner {
   position: relative;
   overflow-y: auto;
-
-  width: 100%;
 
   position: fixed;
   top: 50%;
@@ -34,7 +22,7 @@
   z-index: 111;
   transform: translate3d(-50%, -50%, 0);
 
-  padding: 5rem;
+  padding: 10rem;
 
   background: white;
 
@@ -44,6 +32,14 @@
   @include breakpoint($sm-bp) {
     padding: 5rem 1.5rem;
   }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .order__content {
+    max-width: unset;
+  }
 }
 
 .modal-close-btn {
@@ -52,16 +48,14 @@
   justify-content: center;
 
   position: absolute;
-  top: 4rem;
-  right: 5rem;
+  top: 3rem;
+  right: 3rem;
   z-index: 1;
 
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 3.8rem;
+  height: 3.8rem;
 
   cursor: pointer;
-
-  background: $primary;
 
   transition: all 0.1s linear;
 
@@ -74,14 +68,17 @@
   }
 
   svg {
-    width: 4.6rem;
-    height: 4.6rem;
+    width: 3.2rem;
+    height: 3.2rem;
 
-    stroke: white;
+    stroke: #00020e;
   }
 
   &:hover {
-    background: $primary;
+   svg {
+     stroke-width: 2px;
+     stroke: $primary;
+   }
   }
 }
 

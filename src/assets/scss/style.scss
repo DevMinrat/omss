@@ -42,7 +42,23 @@ body {
 }
 
 main {
+  position: relative;
+
   padding-top: 16.7rem;
+
+  @include breakpoint($lg-bp) {
+    padding-top: 12rem;
+  }
+
+  &.bg::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 2, 14, 0.5);
+  }
 }
 
 img {
@@ -60,6 +76,10 @@ a {
   }
 }
 
+svg {
+  transition: all 0.1s linear;
+}
+
 input,
 textarea,
 button {
@@ -74,12 +94,12 @@ button {
 
 @import "blocks/page";
 @import "blocks/container";
-@import "blocks/header";
 @import "blocks/hollow-btn";
 @import "blocks/filled-btn";
 @import "blocks/modal.scss";
 @import "blocks/section.scss";
 @import "blocks/form.scss";
+@import "blocks/header";
 
 @import "blocks/intro.scss";
 @import "blocks/complects.scss";

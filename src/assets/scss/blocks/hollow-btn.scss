@@ -18,8 +18,10 @@
 
   transition: all 0.2s ease;
 
-  svg {
-    margin-left: 0.6rem;
+  @include breakpoint($sm-bp) {
+    height: 4.9rem;
+
+    padding: 1.5rem;
   }
 
   &:hover {
@@ -27,11 +29,6 @@
 
     background-color: $primary;
     border-color: $primary;
-
-    svg {
-      fill: white;
-      margin-left: 1.6rem;
-    }
   }
 
   &[disabled] {

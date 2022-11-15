@@ -35,6 +35,12 @@
   padding-right: 8rem;
   border-right: 1px solid $primary;
 
+  @include breakpoint($lg-bp) {
+    padding-right: 0;
+
+    border-right: none;
+  }
+
   &:last-child {
     max-width: 80rem;
 

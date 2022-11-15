@@ -1,13 +1,9 @@
 .services__inner {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 3.5rem;
 }
 
-.services__top-row {
-  display: grid;
-  grid-template-columns: 51.5rem 51.5rem 65rem;
-  gap: 3.5rem;
-}
 .services__bottom-row {
   display: grid;
   grid-template-columns: 66rem 51.5rem 1fr;
@@ -37,6 +33,10 @@
   margin-bottom: 2rem;
 }
 
+.services-item__descr {
+  margin-bottom: 2.5rem;
+}
+
 .services-item__price {
   position: relative;
 
@@ -63,6 +63,13 @@
 }
 
 .services-item--security {
+  width: 100%;
+  max-width: 51.5rem;
+
+  @include breakpoint($xl-bp) {
+    max-width: 57.5rem;
+  }
+
   img {
     width: 100%;
     height: 19.6rem;
@@ -76,10 +83,26 @@
   }
 }
 
+.services-item--security-alarm {
+  width: 100%;
+  max-width: 51.5rem;
+
+  @include breakpoint($xl-bp) {
+    max-width: 70.5rem;
+  }
+}
+
 .services-item--firefight {
+  width: 100%;
+  max-width: 65rem;
+
   display: flex;
   flex-direction: row;
   align-items: stretch;
+
+  @include breakpoint($xl-bp) {
+    max-width: 62rem;
+  }
 
   img {
     width: 100%;
@@ -91,6 +114,9 @@
 }
 
 .services-item--firefight-alarm {
+  width: 100%;
+  max-width: 66rem;
+
   .services-item__title {
     margin-bottom: 4rem;
   }
@@ -107,6 +133,13 @@
 }
 
 .services-item--sov {
+  width: 100%;
+  max-width: 51.5rem;
+
+  @include breakpoint($xl-bp) {
+    max-width: 55.5rem;
+  }
+
   img {
     width: 100%;
     max-width: 34.5rem;
@@ -116,6 +149,13 @@
 }
 
 .services-item--order {
+  width: 100%;
+  max-width: 51.5rem;
+
+  @include breakpoint($xl-bp) {
+    max-width: 61.5rem;
+  }
+
   display: flex;
   justify-content: center;
   align-items: flex-end;

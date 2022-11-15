@@ -20,30 +20,78 @@
 .header__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   padding: 3rem 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  @include breakpoint($lg-bp) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 5.5rem 2rem 5rem;
+
+    background: #fafafa;
+
+    transform: translateY(-100%);
+    transition: all 0.2s linear;
+
+    &.active {
+      transform: translateY(0);
+    }
+  }
+}
+
+.menu {
+  width: 100%;
+
+  @include breakpoint($lg-bp) {
+    margin-bottom: 7rem;
+  }
 }
 
 .menu__nav-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6rem;
+
+  @include breakpoint($lg-bp) {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
 }
 
 .nav-list__item-link {
   font-weight: 500;
 }
 
+.header__order-link {
+  @include breakpoint($sm-bp) {
+    max-width: 100%;
+  }
+}
+
 .burger-menu {
   display: none;
   position: absolute;
-  right: 9.4rem;
+  right: 2rem;
 
   z-index: 300;
 
-  width: 3.4rem;
-  height: 3.4rem;
+  width: 43px;
+  height: 43px;
 
   cursor: pointer;
 
@@ -55,24 +103,29 @@
 .burger {
   top: 50%;
   transform: translateY(-50%);
+
+  width: 28px;
 }
 
 .burger,
 .burger::before,
 .burger::after {
   position: absolute;
-  left: 50%;
+  right: 0;
   z-index: 100;
-  transform: translateX(-50%);
   display: block;
-  width: 34px;
-  height: 3px;
-  background-color: rgba(255, 255, 255, 0.5);
+  width: 43px;
+  height: 1px;
+  background-color: $black;
   transition: all 0.3s ease-in-out;
 
   @include breakpoint($sm-bp) {
     background-color: rgba(51, 59, 72, 0.5);
   }
+}
+
+.burger {
+  width: 28px;
 }
 
 .burger::before {
@@ -86,17 +139,17 @@
 }
 
 .burger-menu.menu-on .burger {
-  background: $primary;
+  background: transparent;
 }
 
 .burger-menu.menu-on .burger::before {
-  transform: translateX(-50%) rotate(45deg);
+  transform: rotate(45deg);
   top: 0;
-  background-color: #fff;
+  width: 30px;
 }
 
 .burger-menu.menu-on .burger::after {
-  transform: translateX(-50%) rotate(-45deg);
+  transform: rotate(-45deg);
   bottom: 0;
-  background-color: #fff;
+  width: 30px;
 }

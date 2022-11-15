@@ -25,6 +25,10 @@
   display: flex;
   align-items: flex-start;
   gap: 7.5rem;
+
+  @include breakpoint($xl-bp) {
+    flex-direction: column;
+  }
 }
 
 .about__descr {
@@ -33,6 +37,10 @@
 
   font-size: 3.4rem;
   font-weight: 700;
+
+  @include breakpoint($xl-bp) {
+    max-width: unset;
+  }
 }
 
 .about-slider {

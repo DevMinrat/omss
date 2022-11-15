@@ -1,21 +1,40 @@
 .intro {
   min-height: 91.3rem;
 
-  background: url(../images/intro/intro-bg.png) no-repeat;
-  background-position: right;
+  background-repeat: no-repeat;
+  background-position: right bottom;
   background-size: 134.9rem;
+
+  @include breakpoint($xl-bp) {
+    background-size: 90rem;
+  }
+
+  @include breakpoint($lg-bp) {
+    min-height: 71rem;
+
+    background-size: 57rem;
+  }
 }
 .intro__inner {
   width: 100%;
   max-width: 106rem;
 
   padding-top: 6.4rem;
+
+  @include breakpoint($lg-bp) {
+    padding-top: 0;
+  }
 }
 .intro__title {
   font-weight: 700;
   font-size: 6.4rem;
+  color: $primary;
 
   margin-bottom: 6rem;
+
+  @include breakpoint($lg-bp) {
+    font-size: 3.6rem;
+  }
 }
 .intro__subtitle {
   position: relative;

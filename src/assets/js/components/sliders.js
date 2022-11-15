@@ -43,8 +43,19 @@ const projectsSlider = new Swiper(".projects-slider", {
     rows: 2,
   },
 
-    navigation: {
-      nextEl: ".projects-btn-next",
+  navigation: {
+    nextEl: ".projects-btn-next",
     prevEl: ".projects-btn-prev",
+  },
+
+  breakpoints: {
+    921: {
+      slidesPerView: 1,
+      spaceBetween: 20,
     },
+    1025: {
+      slidesPerView: "auto",
+      spaceBetween: 0,
+    },
+  },
 });

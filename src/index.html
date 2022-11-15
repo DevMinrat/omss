@@ -3,13 +3,14 @@ layout: default
 title: Главная страница
 ---
 
-<section class="intro">
+
+<section class="intro" style="background-image: url(assets/images/intro/intro-bg.png);">
     <div class="container">
         <div class="intro__inner">
             <h1 class="intro__title">Видеонаблюдение, СКУД, охранная и пожарная сигнализация, СКС и электрика</h1>
             <p class="intro__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua</p>
-            <button class="intro__price-btn hollow-btn" disabled>Узнать цену</button>
+            <button class="intro__price-btn hollow-btn" data-modal="modal-order">Узнать цену</button>
         </div>
     </div>
 </section>
@@ -151,55 +152,51 @@ title: Главная страница
     <div class="container">
         <h2 class="section-title">Услуги</h2>
         <div class="services__inner">
-            <div class="services__top-row">
-                <div class="services-item services-item--security">
-                    <img src="assets/images/services/service-1.jpg" alt="">
-                    <div class="services-item__content">
-                        <h3 class="services-item__title">Система охранного видеонаблюдения</h3>
-                        <p class="services-item__descr">Проектирование и монтаж системы охранного видеонаблюдения</p>
-                        <p class="services-item__price">от 20 000 ₽</p>
-                    </div>
-                </div>
-                <div class="services-item services-item--security-alarm">
-                    <div class="services-item__content">
-                        <h3 class="services-item__title">Система охранной или охранно-тревожной сигнализации</h3>
-                        <p class="services-item__descr">Система охранной или охранно-тревожной сигнализации – это
-                            система, которая необходима на любых объектах для обеспечения безопасности</p>
-                        <p class="services-item__price">от 90 000 ₽</p>
-                    </div>
-                </div>
-                <div class="services-item services-item--firefight">
-                    <div class="services-item__content">
-                        <h3 class="services-item__title">Дымоудаление и противопожарная автоматика</h3>
-                        <p class="services-item__price">от 90 000 ₽</p>
-                    </div>
-                    <img src="assets/images/services/service-2.jpg" alt="">
+            <div class="services-item services-item--security">
+                <img src="assets/images/services/service-1.jpg" alt="">
+                <div class="services-item__content">
+                    <h3 class="services-item__title">Система охранного видеонаблюдения</h3>
+                    <p class="services-item__descr">Проектирование и монтаж системы охранного видеонаблюдения</p>
+                    <p class="services-item__price">от 20 000 ₽</p>
                 </div>
             </div>
-            <div class="services__bottom-row">
-                <div class="services-item services-item--firefight-alarm">
-                    <div class="services-item__content">
-                        <h3 class="services-item__title">Автоматическая пожарная сигнализация и система оповещения и
-                            управления эвакуацией</h3>
-                        <div class="services-item__descr">
-                            <div class="services-item__descr-item">Избавляем от проблем с подрядчиками и документами
-                            </div>
-                            <div class="services-item__descr-item">Выполняем проекты любой сложности</div>
-                            <div class="services-item__descr-item">Инвестируем в технологии</div>
+            <div class="services-item services-item--security-alarm">
+                <div class="services-item__content">
+                    <h3 class="services-item__title">Система охранной или охранно-тревожной сигнализации</h3>
+                    <p class="services-item__descr">Система охранной или охранно-тревожной сигнализации – это
+                        система, которая необходима на любых объектах для обеспечения безопасности</p>
+                    <p class="services-item__price">от 90 000 ₽</p>
+                </div>
+            </div>
+            <div class="services-item services-item--firefight">
+                <div class="services-item__content">
+                    <h3 class="services-item__title">Дымоудаление и противопожарная автоматика</h3>
+                    <p class="services-item__price">от 90 000 ₽</p>
+                </div>
+                <img src="assets/images/services/service-2.jpg" alt="">
+            </div>
+            <div class="services-item services-item--firefight-alarm">
+                <div class="services-item__content">
+                    <h3 class="services-item__title">Автоматическая пожарная сигнализация и система оповещения и
+                        управления эвакуацией</h3>
+                    <div class="services-item__descr">
+                        <div class="services-item__descr-item">Избавляем от проблем с подрядчиками и документами
                         </div>
-                        <p class="services-item__price">от 190 000 ₽</p>
+                        <div class="services-item__descr-item">Выполняем проекты любой сложности</div>
+                        <div class="services-item__descr-item">Инвестируем в технологии</div>
                     </div>
+                    <p class="services-item__price">от 190 000 ₽</p>
                 </div>
-                <div class="services-item services-item--sov">
-                    <div class="services-item__content">
-                        <h3 class="services-item__title">СОВ (СКУД)</h3>
-                        <p class="services-item__price">от 190 000 ₽</p>
-                    </div>
-                    <img src="assets/images/services/service-3.png" alt="">
+            </div>
+            <div class="services-item services-item--sov">
+                <div class="services-item__content">
+                    <h3 class="services-item__title">СОВ (СКУД)</h3>
+                    <p class="services-item__price">от 190 000 ₽</p>
                 </div>
-                <div class="services-item services-item--order">
-                    <button class="hollow-btn">Оставить заявку</button>
-                </div>
+                <img src="assets/images/services/service-3.png" alt="">
+            </div>
+            <div class="services-item services-item--order">
+                <button class="hollow-btn" data-modal="modal-order">Оставить заявку</button>
             </div>
         </div>
     </div>
@@ -361,7 +358,7 @@ title: Главная страница
             </div>
         </div>
     </div>
-    <button class="partners__btn hollow-btn">Оставить заявку</button>
+    <button class="partners__btn hollow-btn" data-modal="modal-order">Оставить заявку</button>
     <div class="partners-slider__navs">
         <div class="partners-btn-next slider-btn-next">
             <svg class="slider__nav-icon">
