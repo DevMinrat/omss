@@ -50,6 +50,10 @@ main {
     padding-top: 12rem;
   }
 
+  @include breakpoint($sm-bp) {
+    padding-top: 8rem;
+  }
+
   &.bg::after {
     content: "";
     position: absolute;

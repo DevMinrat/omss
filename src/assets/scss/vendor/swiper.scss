@@ -666,6 +666,11 @@ button.swiper-pagination-bullet {
   cursor: pointer;
   user-select: none;
 
+  @include breakpoint($sm-bp) {
+    width: 5.5rem;
+    height: 3rem;
+  }
+
   &:hover {
     background: $primary;
 

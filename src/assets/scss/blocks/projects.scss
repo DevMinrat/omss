@@ -9,6 +9,10 @@
     overflow: visible;
   }
 
+  @include breakpoint($lg-bp) {
+    height: unset;
+  }
+
   .swiper-wrapper {
     row-gap: 10rem;
   }
@@ -31,6 +35,10 @@
     bottom: -7rem;
     right: auto;
   }
+
+  @include breakpoint($sm-bp) {
+    bottom: -6rem;
+  }
 }
 
 .projects-item {
@@ -40,8 +48,8 @@
 
   margin-top: 0 !important;
 
-  @include breakpoint($xl-bp) {
-    // max-width: 99rem;
+  @include breakpoint($lg-bp) {
+    height: unset !important;
   }
 
   &:nth-child(odd) {
@@ -74,6 +82,10 @@
   @include breakpoint($xl-bp) {
     gap: 2rem;
   }
+
+  @include breakpoint($lg-bp) {
+    flex-direction: column;
+  }
 }
 
 .projects-item__content {
@@ -83,6 +95,10 @@
   @include breakpoint($xl-bp) {
     max-width: 56.5rem;
   }
+
+  @include breakpoint($lg-bp) {
+    max-width: 100%;
+  }
 }
 
 .projects-item__title {
@@ -90,6 +106,16 @@
   font-size: 3.4rem;
 
   margin-bottom: 6rem;
+
+  @include breakpoint($lg-bp) {
+    margin-bottom: 3rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    font-size: 2.4rem;
+
+    margin-bottom: 2rem;
+  }
 }
 .projects-item__descr {
   position: relative;
@@ -112,4 +138,8 @@
 .projects-item__img {
   width: 100%;
   max-width: 76rem;
+
+  @include breakpoint($lg-bp) {
+    max-width: 100%;
+  }
 }

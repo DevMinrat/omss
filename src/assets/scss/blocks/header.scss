@@ -22,6 +22,10 @@
   align-items: center;
 
   padding: 3rem 0;
+
+  @include breakpoint($sm-bp) {
+    padding: 2rem 0;
+  }
 }
 
 .header-content {

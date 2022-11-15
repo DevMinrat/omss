@@ -2,12 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 3.5rem;
-}
 
-.services__bottom-row {
-  display: grid;
-  grid-template-columns: 66rem 51.5rem 1fr;
-  gap: 3.5rem;
+  @include breakpoint($sm-bp) {
+    gap: 2rem;
+  }
 }
 
 .services-item {
@@ -24,6 +22,12 @@
   height: -webkit-fill-available;
 
   padding: 3rem 2rem;
+
+  @include breakpoint($sm-bp) {
+    height: 100%;
+
+    padding: 2rem 1rem;
+  }
 }
 
 .services-item__title {
@@ -31,6 +35,10 @@
   font-weight: 600;
 
   margin-bottom: 2rem;
+
+  @include breakpoint($sm-bp) {
+    font-size: 1.8rem;
+  }
 }
 
 .services-item__descr {
@@ -75,6 +83,11 @@
     height: 19.6rem;
 
     object-fit: cover;
+
+    @include breakpoint($sm-bp) {
+      min-height: 16.1rem;
+      max-height: 16.1rem;
+    }
   }
 
   .services-item__title {
@@ -104,12 +117,22 @@
     max-width: 62rem;
   }
 
+  @include breakpoint($sm-bp) {
+    flex-direction: column-reverse !important;
+  }
+
   img {
     width: 100%;
     max-width: 33rem;
     height: 100%;
 
     object-fit: cover;
+
+    @include breakpoint($sm-bp) {
+      max-width: 100%;
+      min-height: 16.1rem;
+      max-height: 16.1rem;
+    }
   }
 }
 
@@ -119,16 +142,28 @@
 
   .services-item__title {
     margin-bottom: 4rem;
+
+    @include breakpoint($sm-bp) {
+      margin-bottom: 2rem;
+    }
   }
 
   .services-item__descr {
     display: grid;
     gap: 2.7rem;
+
+    @include breakpoint($sm-bp) {
+      gap: 1.5rem;
+    }
   }
 
   .services-item__descr-item:not(:last-child) {
     padding-bottom: 2.7rem;
     border-bottom: 1px solid $primary;
+
+    @include breakpoint($sm-bp) {
+      padding-bottom: 1.5rem;
+    }
   }
 }
 
@@ -145,16 +180,16 @@
     max-width: 34.5rem;
 
     margin-left: auto;
+
+    @include breakpoint($sm-bp) {
+      max-width: 20rem;
+    }
   }
 }
 
 .services-item--order {
   width: 100%;
   max-width: 51.5rem;
-
-  @include breakpoint($xl-bp) {
-    max-width: 61.5rem;
-  }
 
   display: flex;
   justify-content: center;
@@ -164,7 +199,35 @@
 
   background: none;
 
+  @include breakpoint($xl-bp) {
+    max-width: 61.5rem;
+  }
+
+  @include breakpoint($lg-bp) {
+    align-items: center;
+
+    padding-right: 0;
+  }
+
+  @include breakpoint($sm-bp) {
+    min-height: 4.9rem !important;
+
+    margin-top: 1rem;
+  }
+
   button {
     max-width: 33.5rem;
+  }
+}
+
+.services-item {
+  @include breakpoint($lg-bp) {
+    max-width: 100%;
+  }
+  @include breakpoint($sm-bp) {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 35.7rem;
   }
 }

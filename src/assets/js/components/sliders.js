@@ -36,6 +36,18 @@ const partnersSlider = new Swiper(".partners-slider", {
     nextEl: ".partners-btn-next",
     prevEl: ".partners-btn-prev",
   },
+
+  breakpoints: {
+    101: {
+      spaceBetween: 40,
+    },
+    501: {
+      spaceBetween: 50,
+    },
+    921: {
+      spaceBetween: 200,
+    },
+  },
 });
 const projectsSlider = new Swiper(".projects-slider", {
   slidesPerView: "auto",
@@ -49,7 +61,14 @@ const projectsSlider = new Swiper(".projects-slider", {
   },
 
   breakpoints: {
+    100: {
+      grid: false,
+      spaceBetween: 50,
+    },
     921: {
+      grid: {
+        rows: 2,
+      },
       slidesPerView: 1,
       spaceBetween: 20,
     },
