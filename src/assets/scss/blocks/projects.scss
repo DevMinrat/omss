@@ -138,6 +138,9 @@
 .projects-item__img {
   width: 100%;
   max-width: 76rem;
+  height: 34rem;
+
+  object-fit: cover;
 
   @include breakpoint($lg-bp) {
     max-width: 100%;

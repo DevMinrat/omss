@@ -56,6 +56,29 @@
   }
 }
 
+.header__logo {
+  display: flex;
+
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.3rem;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+span.header__logo-left {
+  padding-right: 1rem;
+}
+
+span.header__logo-right {
+  padding: 0.7rem 3.6rem 0.6rem 0.9rem;
+  border: 0.1rem solid $black;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 .menu {
   width: 100%;
 
