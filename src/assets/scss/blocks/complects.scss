@@ -30,7 +30,7 @@
 
 .complects-slider__item {
   width: 100%;
-  max-width: 88rem;
+  max-width: 150rem;
 
   box-sizing: border-box;
 
@@ -53,7 +53,7 @@
   }
 
   &:last-child {
-    max-width: 80rem;
+    max-width: 150rem;
 
     border-right: none;
     padding-right: 0;
@@ -73,7 +73,6 @@
 
 .cs-item__content {
   width: 100%;
-  max-width: 26rem;
 
   display: flex;
   flex-direction: column;
@@ -83,9 +82,20 @@
   }
 }
 
+.cs-item__name {
+  font-size: 2.4rem;
+  font-weight: 600;
+
+  margin-bottom: 2rem;
+}
+
 .cs-item__descr {
+  margin-bottom: auto;
+
+  font-size: 2rem;
+
   @include breakpoint($sm-bp) {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   p {
@@ -113,7 +123,17 @@
   color: $primary;
 
   margin-bottom: 3rem;
-  margin-top: auto;
+
+  @include breakpoint($sm-bp) {
+    font-size: 2rem;
+
+    margin-bottom: 1.5rem;
+  }
+}
+.cs-item__btns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 .cs-item__btn {
   width: 100%;
@@ -122,7 +142,11 @@
 
   padding: 2rem;
 
+  @include breakpoint($lg-bp) {
+    padding: 2rem 1rem;
+  }
+
   @include breakpoint($sm-bp) {
-    padding: 1.5rem;
+    padding: 1.5rem 0.5rem;
   }
 }
